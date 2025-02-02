@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var rootCmd = &cobra.Command{
+var RootCmd = &cobra.Command{
     Use: "nyx",
     Short: "nyx short description...",
     Long: "nyx long description...",
@@ -17,7 +17,7 @@ var rootCmd = &cobra.Command{
 }
 
 func Execute() {
-    if err := rootCmd.Execute(); err != nil{
+    if err := RootCmd.Execute(); err != nil{
         log.Printf("An error occurred during execution, %s", err)
         os.Exit(1)
     }

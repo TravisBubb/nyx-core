@@ -1,4 +1,4 @@
-package nyx
+package openapi 
 
 import (
 	"log"
@@ -6,10 +6,9 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var testCmd = &cobra.Command{
-    Use: "test",
-    Aliases: []string{"te"},
-    Short: "Simple test command",
+var validateCmd = &cobra.Command{
+    Use: "validate",
+    Short: "Validate the given OpenAPI specification file",
     Args: cobra.ExactArgs(1),
     Run: func(cmd *cobra.Command, args []string){
         log.Printf("Hello from test: %s", args[0])
@@ -17,5 +16,5 @@ var testCmd = &cobra.Command{
 }
 
 func init() {
-    rootCmd.AddCommand(testCmd)
+    openapiCmd.AddCommand(validateCmd)
 }
