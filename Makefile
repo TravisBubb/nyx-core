@@ -11,11 +11,11 @@ build:
 
 .PHONY: run
 run: build
-	$(BUILD_DIR)/$(BINARY_NAME) <args>
+	@$(BUILD_DIR)/$(BINARY_NAME) <args>
 
 .PHONY: test
 test:
-	go test ./...
+	@go test ./...
 
 .PHONY: clean
 clean:
@@ -23,5 +23,5 @@ clean:
 
 .PHONY: install
 install: build
-	go install ./...
+	@go install ./...
 
