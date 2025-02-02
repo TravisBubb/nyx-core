@@ -11,9 +11,6 @@ var RootCmd = &cobra.Command{
     Use: "nyx",
     Short: "nyx short description...",
     Long: "nyx long description...",
-    Run: func (cmd *cobra.Command, args[]string) {
-
-    },
 }
 
 func Execute() {

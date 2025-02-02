@@ -1,0 +1,21 @@
+{
+    "version": "1.0",
+    "requests": [
+        {
+            "id": "",
+            "name": "Create a new post",
+            "description": "Tests the POST /posts endpoint",
+            "url": "https://jsonplaceholder.typicode.com/posts",
+            "method": "POST",
+            "headers": {
+                "content-type": "application/json"
+            },
+            "body": {
+                "obj": {
+                    "prop1": "value1",
+                    "prop2": "value2"
+                }
+           }
+        }
+    ]
+}
