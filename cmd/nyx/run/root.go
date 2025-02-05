@@ -1,5 +1,5 @@
 
-package openapi
+package run 
 
 import (
 	"github.com/TravisBubb/nyx-core/cmd/nyx"

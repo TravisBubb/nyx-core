@@ -72,7 +72,7 @@ func TestRunnerExecuteTestSuiteSuccess(t *testing.T) {
 			models.TestCase{
 				Id:          "",
 				Name:        "Create a new post",
-				Description: "Tests the POST /posts endpoint",
+			    Description: "Tests the POST /posts endpoint",
 				Request: models.APIRequest{
 					Method: "GET",
 					Url:    "https://jsonplaceholder.typicode.com/todos/1",
@@ -85,6 +85,6 @@ func TestRunnerExecuteTestSuiteSuccess(t *testing.T) {
 	}
 
     runner := NewTestRunner()
-    err := runner.Execute(testSuite)
+    _, err := runner.Execute(testSuite)
     assert.NoError(t, err)
 }
